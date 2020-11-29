@@ -1,5 +1,38 @@
 # **Demux Assignment**
 
+## How to Use
+
+**Step 1:**
+
+Download or clone this repo by using the link below:
+
+```
+https://github.com/praveen4030/DemuxSolution
+```
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get
+```
+
+**Step 3:**
+
+This project uses `inject` library that works with code generation, execute the following command to generate files:
+
+```
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
+
+or watch command in order to keep the source code synced automatically:
+
+```
+flutter packages pub run build_runner watch
+```
+
+## File Structure
 This repoitory follows Data Driven Design Strcuture.
 In this structure, all the code is divided into four layers each being independent of each other.
 
@@ -62,3 +95,10 @@ User can also search for the question on the basis of Tags.
 
 ## APK
 You can find the apk to test it inside APK folder
+
+## Screen shots
+
+![alt text](ss/splash.jpeg)
+![alt text](ss/home.jpeg)
+![alt text](ss/search2.jpeg)
+![alt text](ss/search1.jpeg)
