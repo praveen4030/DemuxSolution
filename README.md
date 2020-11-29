@@ -59,3 +59,6 @@ User can also search for the question on the basis of Tags.
 
 - Auto Route
  : It is used to reduce the boiler plate code in routing and to access to awesome features provided by this package
+
+## APK
+You can find the apk to test it inside APK folder
