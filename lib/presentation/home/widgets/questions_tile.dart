@@ -53,17 +53,32 @@ class QuestionsTile extends StatelessWidget {
             horizontal: 16,
           ),
           decoration: BoxDecoration(
-              color: Colors.grey[100],
-              borderRadius: BorderRadius.circular(
-                12,
-              )),
+            color: Colors.grey[100],
+            borderRadius: BorderRadius.circular(
+              12,
+            ),
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
-                leading: CircleAvatar(
-                  backgroundColor: Colors.grey[300],
-                  child: Text(question.frequency),
+                leading: Column(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.grey[300],
+                      child: Text(question.frequency),
+                    ),
+                    const SizedBox(
+                      height: 3,
+                    ),
+                    const Text(
+                      'Frequency',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.black45,
+                      ),
+                    )
+                  ],
                 ),
                 title: Text(
                   question.title,

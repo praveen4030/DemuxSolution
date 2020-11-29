@@ -45,3 +45,17 @@ Question will contain
 - Timestamp
 
 User can also search for the question on the basis of Tags.
+
+## Major Packages Used
+
+- GetIt
+It is used to inject the blocs, classes.
+
+- Linting
+ Linting is exhaustively used in this project to improve the code quality and improve the speed.
+
+- Bloc
+It is used for better state management to keep the business logic seperately from UI.
+
+- Auto Route
+It is used to reduce the boiler plate code in routing and to access to awesome features provided by this package
