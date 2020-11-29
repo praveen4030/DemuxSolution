@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "955790654647",
+    "firebase_url": "https://demux-assignment.firebaseio.com",
+    "project_id": "demux-assignment",
+    "storage_bucket": "demux-assignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955790654647:android:1da30eafc3968dc5f26132",
+        "android_client_info": {
+          "package_name": "com.example.demux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955790654647-ab4unuh2ilfflgs5cer380061p0c5urr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGFwsGk9k73sf8xCe0Vpq2b_rc22xSgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955790654647-ab4unuh2ilfflgs5cer380061p0c5urr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955790654647:android:860706582da9887af26132",
+        "android_client_info": {
+          "package_name": "com.example.demux_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955790654647-ab4unuh2ilfflgs5cer380061p0c5urr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGFwsGk9k73sf8xCe0Vpq2b_rc22xSgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955790654647-ab4unuh2ilfflgs5cer380061p0c5urr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
