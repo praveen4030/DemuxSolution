@@ -109,6 +109,6 @@ You can find the apk to test it inside APK folder
 
 <!-- ![alt-text-1](ss/splash.jpeg "title-1") ![alt-text-2](ss/splash.jpeg "title-2") -->
 
-Home Page | Filter Sheet | Search Page 1 | Search Page 2
+Splash Page | Home Page | Search Page 1 | Search Page 2
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![Splash Page](ss/splash.jpeg "Splash Page")|![Filter Sheet](ss/home.jpeg "Home Page")|![Search Page](ss/search2.jpeg "Search Bar")|![Search Page 2](ss/search1.jpeg "Search Bar 2")
+![Splash Page](ss/splash.jpeg "Splash Page")|![Home Page](ss/home.jpeg "Home Page")|![Search Page](ss/search2.jpeg "Search Page")|![Search Page 2](ss/search1.jpeg "Search Page 2")
