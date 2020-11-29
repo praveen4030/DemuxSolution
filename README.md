@@ -107,7 +107,8 @@ You can find the apk to test it inside APK folder
 
 ## Screen shots
 
-![alt text](ss/splash.jpeg)
-![alt text](ss/home.jpeg)
-![alt text](ss/search2.jpeg)
-![alt text](ss/search1.jpeg)
+<!-- ![alt-text-1](ss/splash.jpeg "title-1") ![alt-text-2](ss/splash.jpeg "title-2") -->
+
+Home Page | Filter Sheet | Search Page 1 | Search Page 2
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![Splash Page](ss/splash.jpeg "Splash Page")|![Filter Sheet](ss/home.jpeg "Home Page")|![Search Page](ss/search2.jpeg "Search Bar")|![Search Page 2](ss/search1.jpeg "Search Bar 2")
