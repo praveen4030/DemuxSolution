@@ -32,6 +32,15 @@ or watch command in order to keep the source code synced automatically:
 flutter packages pub run build_runner watch
 ```
 
+**Step 4:**
+Connect the USB or run emulator to run it in debug mode.
+
+or you can run this command to generate the apk yourself.
+
+```
+flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+```
+
 ## File Structure
 This repoitory follows Data Driven Design Strcuture.
 In this structure, all the code is divided into four layers each being independent of each other.
