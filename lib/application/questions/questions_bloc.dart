@@ -29,8 +29,10 @@ class QuestionsBloc extends Bloc<QuestionsEvent, QuestionsState> {
           isLoadingMore: false,
           failureOrSuccess: none(),
         );
-        
-        final questionsOpt = await iQuestions.getFirstQuestions();
+
+        final questionsOpt = await iQuestions.getFirstQuestions(
+          state.filtersList,
+        );
         yield questionsOpt.fold(
           (l) =>
               state.copyWith(isLoading: false, failureOrSuccess: some(left(l))),
@@ -46,8 +48,8 @@ class QuestionsBloc extends Bloc<QuestionsEvent, QuestionsState> {
             isLoadingMore: true,
           );
 
-          final opt =
-              await iQuestions.getMoreQuestions(state.list.last.timestamp);
+          final opt = await iQuestions.getMoreQuestions(
+              state.filtersList, state.list.last.timestamp);
 
           yield opt.fold(
               (failure) => state.copyWith(
@@ -66,6 +68,24 @@ class QuestionsBloc extends Bloc<QuestionsEvent, QuestionsState> {
             );
           });
         }
+      },
+      addFilter: (e) async* {
+        List<String> list = List.from(state.filtersList)..add(e.tag);
+        yield state.copyWith(
+          filtersList: list,
+        );
+      },
+      showFilteredQuestions: (e) async* {},
+      removeFilter: (e) async* {
+        List<String> list = List.from(state.filtersList)..remove(e.tag);
+        yield state.copyWith(
+          filtersList: list,
+        );
+      },
+      clearFilters: (e) async* {
+        yield state.copyWith(
+          filtersList: [],
+        );
       },
     );
   }

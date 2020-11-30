@@ -86,7 +86,7 @@ Question will contain
 - Tags
 - Timestamp
 
-User can also search for the question on the basis of Tags.
+User can also search for the question as well as can filter them on the basis of Tags
 
 ## Major Packages Used
 
@@ -107,8 +107,11 @@ You can find the apk to test it inside APK folder
 
 ## Screen shots
 
-<!-- ![alt-text-1](ss/splash.jpeg "title-1") ![alt-text-2](ss/splash.jpeg "title-2") -->
 
-Splash Page | Home Page | Search Page 1 | Search Page 2
+Splash Page | Home Page | Filters Page
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![Splash Page](ss/splash.jpeg "Splash Page")|![Home Page](ss/home.jpeg "Home Page")|![Search Page](ss/search2.jpeg "Search Page")|![Search Page 2](ss/search1.jpeg "Search Page 2")
+![Splash Page](ss/splash.jpeg "Splash Page")|![Home Page](ss/home.jpeg "Home Page")|![Filters Page](ss/filters.jpeg "Filters Page")
+
+Search Page 1 | Search Page 2
+:-------------------------:|:-------------------------:
+![Search Page](ss/search2.jpeg "Search Page")|![Search Page 2](ss/search1.jpeg "Search Page 2")

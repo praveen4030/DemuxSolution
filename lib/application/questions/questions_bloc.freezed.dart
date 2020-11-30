@@ -22,6 +22,30 @@ class _$QuestionsEventTearOff {
   _GetMoreQuestions getMoreQuestions() {
     return const _GetMoreQuestions();
   }
+
+// ignore: unused_element
+  _AddFilter addFilter(String tag) {
+    return _AddFilter(
+      tag,
+    );
+  }
+
+// ignore: unused_element
+  _RemoveFilter removeFilter(String tag) {
+    return _RemoveFilter(
+      tag,
+    );
+  }
+
+// ignore: unused_element
+  _ShowFilteredQuestions showFilteredQuestions() {
+    return const _ShowFilteredQuestions();
+  }
+
+// ignore: unused_element
+  _ClearFilters clearFilters() {
+    return const _ClearFilters();
+  }
 }
 
 /// @nodoc
@@ -34,22 +58,38 @@ mixin _$QuestionsEvent {
   TResult when<TResult extends Object>({
     @required TResult initial(),
     @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
   });
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object>({
     TResult initial(),
     TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
     @required TResult orElse(),
   });
   @optionalTypeArgs
   TResult map<TResult extends Object>({
     @required TResult initial(_Initial value),
     @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
   });
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object>({
     TResult initial(_Initial value),
     TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
     @required TResult orElse(),
   });
 }
@@ -109,9 +149,17 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object>({
     @required TResult initial(),
     @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
   }) {
     assert(initial != null);
     assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
     return initial();
   }
 
@@ -120,6 +168,10 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object>({
     TResult initial(),
     TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -134,9 +186,17 @@ class _$_Initial implements _Initial {
   TResult map<TResult extends Object>({
     @required TResult initial(_Initial value),
     @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
   }) {
     assert(initial != null);
     assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
     return initial(this);
   }
 
@@ -145,6 +205,10 @@ class _$_Initial implements _Initial {
   TResult maybeMap<TResult extends Object>({
     TResult initial(_Initial value),
     TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -200,9 +264,17 @@ class _$_GetMoreQuestions implements _GetMoreQuestions {
   TResult when<TResult extends Object>({
     @required TResult initial(),
     @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
   }) {
     assert(initial != null);
     assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
     return getMoreQuestions();
   }
 
@@ -211,6 +283,10 @@ class _$_GetMoreQuestions implements _GetMoreQuestions {
   TResult maybeWhen<TResult extends Object>({
     TResult initial(),
     TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -225,9 +301,17 @@ class _$_GetMoreQuestions implements _GetMoreQuestions {
   TResult map<TResult extends Object>({
     @required TResult initial(_Initial value),
     @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
   }) {
     assert(initial != null);
     assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
     return getMoreQuestions(this);
   }
 
@@ -236,6 +320,10 @@ class _$_GetMoreQuestions implements _GetMoreQuestions {
   TResult maybeMap<TResult extends Object>({
     TResult initial(_Initial value),
     TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -251,6 +339,512 @@ abstract class _GetMoreQuestions implements QuestionsEvent {
 }
 
 /// @nodoc
+abstract class _$AddFilterCopyWith<$Res> {
+  factory _$AddFilterCopyWith(
+          _AddFilter value, $Res Function(_AddFilter) then) =
+      __$AddFilterCopyWithImpl<$Res>;
+  $Res call({String tag});
+}
+
+/// @nodoc
+class __$AddFilterCopyWithImpl<$Res> extends _$QuestionsEventCopyWithImpl<$Res>
+    implements _$AddFilterCopyWith<$Res> {
+  __$AddFilterCopyWithImpl(_AddFilter _value, $Res Function(_AddFilter) _then)
+      : super(_value, (v) => _then(v as _AddFilter));
+
+  @override
+  _AddFilter get _value => super._value as _AddFilter;
+
+  @override
+  $Res call({
+    Object tag = freezed,
+  }) {
+    return _then(_AddFilter(
+      tag == freezed ? _value.tag : tag as String,
+    ));
+  }
+}
+
+/// @nodoc
+class _$_AddFilter implements _AddFilter {
+  const _$_AddFilter(this.tag) : assert(tag != null);
+
+  @override
+  final String tag;
+
+  @override
+  String toString() {
+    return 'QuestionsEvent.addFilter(tag: $tag)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _AddFilter &&
+            (identical(other.tag, tag) ||
+                const DeepCollectionEquality().equals(other.tag, tag)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(tag);
+
+  @override
+  _$AddFilterCopyWith<_AddFilter> get copyWith =>
+      __$AddFilterCopyWithImpl<_AddFilter>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult initial(),
+    @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return addFilter(tag);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult initial(),
+    TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (addFilter != null) {
+      return addFilter(tag);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult initial(_Initial value),
+    @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return addFilter(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult initial(_Initial value),
+    TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (addFilter != null) {
+      return addFilter(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddFilter implements QuestionsEvent {
+  const factory _AddFilter(String tag) = _$_AddFilter;
+
+  String get tag;
+  _$AddFilterCopyWith<_AddFilter> get copyWith;
+}
+
+/// @nodoc
+abstract class _$RemoveFilterCopyWith<$Res> {
+  factory _$RemoveFilterCopyWith(
+          _RemoveFilter value, $Res Function(_RemoveFilter) then) =
+      __$RemoveFilterCopyWithImpl<$Res>;
+  $Res call({String tag});
+}
+
+/// @nodoc
+class __$RemoveFilterCopyWithImpl<$Res>
+    extends _$QuestionsEventCopyWithImpl<$Res>
+    implements _$RemoveFilterCopyWith<$Res> {
+  __$RemoveFilterCopyWithImpl(
+      _RemoveFilter _value, $Res Function(_RemoveFilter) _then)
+      : super(_value, (v) => _then(v as _RemoveFilter));
+
+  @override
+  _RemoveFilter get _value => super._value as _RemoveFilter;
+
+  @override
+  $Res call({
+    Object tag = freezed,
+  }) {
+    return _then(_RemoveFilter(
+      tag == freezed ? _value.tag : tag as String,
+    ));
+  }
+}
+
+/// @nodoc
+class _$_RemoveFilter implements _RemoveFilter {
+  const _$_RemoveFilter(this.tag) : assert(tag != null);
+
+  @override
+  final String tag;
+
+  @override
+  String toString() {
+    return 'QuestionsEvent.removeFilter(tag: $tag)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _RemoveFilter &&
+            (identical(other.tag, tag) ||
+                const DeepCollectionEquality().equals(other.tag, tag)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(tag);
+
+  @override
+  _$RemoveFilterCopyWith<_RemoveFilter> get copyWith =>
+      __$RemoveFilterCopyWithImpl<_RemoveFilter>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult initial(),
+    @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return removeFilter(tag);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult initial(),
+    TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (removeFilter != null) {
+      return removeFilter(tag);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult initial(_Initial value),
+    @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return removeFilter(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult initial(_Initial value),
+    TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (removeFilter != null) {
+      return removeFilter(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _RemoveFilter implements QuestionsEvent {
+  const factory _RemoveFilter(String tag) = _$_RemoveFilter;
+
+  String get tag;
+  _$RemoveFilterCopyWith<_RemoveFilter> get copyWith;
+}
+
+/// @nodoc
+abstract class _$ShowFilteredQuestionsCopyWith<$Res> {
+  factory _$ShowFilteredQuestionsCopyWith(_ShowFilteredQuestions value,
+          $Res Function(_ShowFilteredQuestions) then) =
+      __$ShowFilteredQuestionsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$ShowFilteredQuestionsCopyWithImpl<$Res>
+    extends _$QuestionsEventCopyWithImpl<$Res>
+    implements _$ShowFilteredQuestionsCopyWith<$Res> {
+  __$ShowFilteredQuestionsCopyWithImpl(_ShowFilteredQuestions _value,
+      $Res Function(_ShowFilteredQuestions) _then)
+      : super(_value, (v) => _then(v as _ShowFilteredQuestions));
+
+  @override
+  _ShowFilteredQuestions get _value => super._value as _ShowFilteredQuestions;
+}
+
+/// @nodoc
+class _$_ShowFilteredQuestions implements _ShowFilteredQuestions {
+  const _$_ShowFilteredQuestions();
+
+  @override
+  String toString() {
+    return 'QuestionsEvent.showFilteredQuestions()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _ShowFilteredQuestions);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult initial(),
+    @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return showFilteredQuestions();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult initial(),
+    TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (showFilteredQuestions != null) {
+      return showFilteredQuestions();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult initial(_Initial value),
+    @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return showFilteredQuestions(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult initial(_Initial value),
+    TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (showFilteredQuestions != null) {
+      return showFilteredQuestions(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ShowFilteredQuestions implements QuestionsEvent {
+  const factory _ShowFilteredQuestions() = _$_ShowFilteredQuestions;
+}
+
+/// @nodoc
+abstract class _$ClearFiltersCopyWith<$Res> {
+  factory _$ClearFiltersCopyWith(
+          _ClearFilters value, $Res Function(_ClearFilters) then) =
+      __$ClearFiltersCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$ClearFiltersCopyWithImpl<$Res>
+    extends _$QuestionsEventCopyWithImpl<$Res>
+    implements _$ClearFiltersCopyWith<$Res> {
+  __$ClearFiltersCopyWithImpl(
+      _ClearFilters _value, $Res Function(_ClearFilters) _then)
+      : super(_value, (v) => _then(v as _ClearFilters));
+
+  @override
+  _ClearFilters get _value => super._value as _ClearFilters;
+}
+
+/// @nodoc
+class _$_ClearFilters implements _ClearFilters {
+  const _$_ClearFilters();
+
+  @override
+  String toString() {
+    return 'QuestionsEvent.clearFilters()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _ClearFilters);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult initial(),
+    @required TResult getMoreQuestions(),
+    @required TResult addFilter(String tag),
+    @required TResult removeFilter(String tag),
+    @required TResult showFilteredQuestions(),
+    @required TResult clearFilters(),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return clearFilters();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult initial(),
+    TResult getMoreQuestions(),
+    TResult addFilter(String tag),
+    TResult removeFilter(String tag),
+    TResult showFilteredQuestions(),
+    TResult clearFilters(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (clearFilters != null) {
+      return clearFilters();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult initial(_Initial value),
+    @required TResult getMoreQuestions(_GetMoreQuestions value),
+    @required TResult addFilter(_AddFilter value),
+    @required TResult removeFilter(_RemoveFilter value),
+    @required TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    @required TResult clearFilters(_ClearFilters value),
+  }) {
+    assert(initial != null);
+    assert(getMoreQuestions != null);
+    assert(addFilter != null);
+    assert(removeFilter != null);
+    assert(showFilteredQuestions != null);
+    assert(clearFilters != null);
+    return clearFilters(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult initial(_Initial value),
+    TResult getMoreQuestions(_GetMoreQuestions value),
+    TResult addFilter(_AddFilter value),
+    TResult removeFilter(_RemoveFilter value),
+    TResult showFilteredQuestions(_ShowFilteredQuestions value),
+    TResult clearFilters(_ClearFilters value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (clearFilters != null) {
+      return clearFilters(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ClearFilters implements QuestionsEvent {
+  const factory _ClearFilters() = _$_ClearFilters;
+}
+
+/// @nodoc
 class _$QuestionsStateTearOff {
   const _$QuestionsStateTearOff();
 
@@ -260,13 +854,15 @@ class _$QuestionsStateTearOff {
       @required Option<Either<Failure, List<Question>>> failureOrSuccess,
       @required List<Question> list,
       @required bool isLoadingMore,
-      @required bool hasMore}) {
+      @required bool hasMore,
+      @required List<String> filtersList}) {
     return _QuestionsState(
       isLoading: isLoading,
       failureOrSuccess: failureOrSuccess,
       list: list,
       isLoadingMore: isLoadingMore,
       hasMore: hasMore,
+      filtersList: filtersList,
     );
   }
 }
@@ -282,6 +878,7 @@ mixin _$QuestionsState {
   List<Question> get list;
   bool get isLoadingMore;
   bool get hasMore;
+  List<String> get filtersList;
 
   $QuestionsStateCopyWith<QuestionsState> get copyWith;
 }
@@ -296,7 +893,8 @@ abstract class $QuestionsStateCopyWith<$Res> {
       Option<Either<Failure, List<Question>>> failureOrSuccess,
       List<Question> list,
       bool isLoadingMore,
-      bool hasMore});
+      bool hasMore,
+      List<String> filtersList});
 }
 
 /// @nodoc
@@ -315,6 +913,7 @@ class _$QuestionsStateCopyWithImpl<$Res>
     Object list = freezed,
     Object isLoadingMore = freezed,
     Object hasMore = freezed,
+    Object filtersList = freezed,
   }) {
     return _then(_value.copyWith(
       isLoading: isLoading == freezed ? _value.isLoading : isLoading as bool,
@@ -326,6 +925,9 @@ class _$QuestionsStateCopyWithImpl<$Res>
           ? _value.isLoadingMore
           : isLoadingMore as bool,
       hasMore: hasMore == freezed ? _value.hasMore : hasMore as bool,
+      filtersList: filtersList == freezed
+          ? _value.filtersList
+          : filtersList as List<String>,
     ));
   }
 }
@@ -342,7 +944,8 @@ abstract class _$QuestionsStateCopyWith<$Res>
       Option<Either<Failure, List<Question>>> failureOrSuccess,
       List<Question> list,
       bool isLoadingMore,
-      bool hasMore});
+      bool hasMore,
+      List<String> filtersList});
 }
 
 /// @nodoc
@@ -363,6 +966,7 @@ class __$QuestionsStateCopyWithImpl<$Res>
     Object list = freezed,
     Object isLoadingMore = freezed,
     Object hasMore = freezed,
+    Object filtersList = freezed,
   }) {
     return _then(_QuestionsState(
       isLoading: isLoading == freezed ? _value.isLoading : isLoading as bool,
@@ -374,6 +978,9 @@ class __$QuestionsStateCopyWithImpl<$Res>
           ? _value.isLoadingMore
           : isLoadingMore as bool,
       hasMore: hasMore == freezed ? _value.hasMore : hasMore as bool,
+      filtersList: filtersList == freezed
+          ? _value.filtersList
+          : filtersList as List<String>,
     ));
   }
 }
@@ -385,12 +992,14 @@ class _$_QuestionsState implements _QuestionsState {
       @required this.failureOrSuccess,
       @required this.list,
       @required this.isLoadingMore,
-      @required this.hasMore})
+      @required this.hasMore,
+      @required this.filtersList})
       : assert(isLoading != null),
         assert(failureOrSuccess != null),
         assert(list != null),
         assert(isLoadingMore != null),
-        assert(hasMore != null);
+        assert(hasMore != null),
+        assert(filtersList != null);
 
   @override
   final bool isLoading;
@@ -402,10 +1011,12 @@ class _$_QuestionsState implements _QuestionsState {
   final bool isLoadingMore;
   @override
   final bool hasMore;
+  @override
+  final List<String> filtersList;
 
   @override
   String toString() {
-    return 'QuestionsState(isLoading: $isLoading, failureOrSuccess: $failureOrSuccess, list: $list, isLoadingMore: $isLoadingMore, hasMore: $hasMore)';
+    return 'QuestionsState(isLoading: $isLoading, failureOrSuccess: $failureOrSuccess, list: $list, isLoadingMore: $isLoadingMore, hasMore: $hasMore, filtersList: $filtersList)';
   }
 
   @override
@@ -424,7 +1035,11 @@ class _$_QuestionsState implements _QuestionsState {
                 const DeepCollectionEquality()
                     .equals(other.isLoadingMore, isLoadingMore)) &&
             (identical(other.hasMore, hasMore) ||
-                const DeepCollectionEquality().equals(other.hasMore, hasMore)));
+                const DeepCollectionEquality()
+                    .equals(other.hasMore, hasMore)) &&
+            (identical(other.filtersList, filtersList) ||
+                const DeepCollectionEquality()
+                    .equals(other.filtersList, filtersList)));
   }
 
   @override
@@ -434,7 +1049,8 @@ class _$_QuestionsState implements _QuestionsState {
       const DeepCollectionEquality().hash(failureOrSuccess) ^
       const DeepCollectionEquality().hash(list) ^
       const DeepCollectionEquality().hash(isLoadingMore) ^
-      const DeepCollectionEquality().hash(hasMore);
+      const DeepCollectionEquality().hash(hasMore) ^
+      const DeepCollectionEquality().hash(filtersList);
 
   @override
   _$QuestionsStateCopyWith<_QuestionsState> get copyWith =>
@@ -447,7 +1063,8 @@ abstract class _QuestionsState implements QuestionsState {
       @required Option<Either<Failure, List<Question>>> failureOrSuccess,
       @required List<Question> list,
       @required bool isLoadingMore,
-      @required bool hasMore}) = _$_QuestionsState;
+      @required bool hasMore,
+      @required List<String> filtersList}) = _$_QuestionsState;
 
   @override
   bool get isLoading;
@@ -459,6 +1076,8 @@ abstract class _QuestionsState implements QuestionsState {
   bool get isLoadingMore;
   @override
   bool get hasMore;
+  @override
+  List<String> get filtersList;
   @override
   _$QuestionsStateCopyWith<_QuestionsState> get copyWith;
 }

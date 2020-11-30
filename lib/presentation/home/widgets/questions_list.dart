@@ -12,7 +12,6 @@ class QuestionsListPage extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     final ScrollController _scrollController = ScrollController();
@@ -51,9 +50,11 @@ class QuestionsListPage extends StatelessWidget {
 
   Widget postListWid(List<Question> questionsList) {
     return questionsList.isEmpty
-        ? const NotFoundPage(
-            path: 'assets/illustrations/posts.png',
-            text: "No post found, add more now")
+        ? const Center(
+            child: NotFoundPage(
+                path: 'assets/notfound.svg',
+                text: "No question found for this match"),
+          )
         : ListView.builder(
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,

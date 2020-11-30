@@ -8,6 +8,7 @@ abstract class QuestionsState with _$QuestionsState {
     @required List<Question> list,
     @required bool isLoadingMore,
     @required bool hasMore,
+    @required List<String> filtersList,
   }) = _QuestionsState;
 
   factory QuestionsState.initial() => QuestionsState(
@@ -16,5 +17,6 @@ abstract class QuestionsState with _$QuestionsState {
         list: [],
         isLoadingMore: false,
         hasMore : true,
+        filtersList: [],
       );
 }
