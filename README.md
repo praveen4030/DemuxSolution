@@ -109,7 +109,7 @@ You can find the apk to test it inside APK folder
 
 
 Splash Page | Home Page | Filters Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:|:-------------------------:
 ![Splash Page](ss/splash.jpeg "Splash Page")|![Home Page](ss/home.jpeg "Home Page")|![Filters Page](ss/filters.jpeg "Filters Page")
 
 Search Page 1 | Search Page 2
